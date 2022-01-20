@@ -1,0 +1,26 @@
+@import '../styles/settings.scss';
+
+.columnForm{
+    left: 50%;
+    display: inline-block;
+    position: relative;
+    transform: translateX(-50%);
+    padding: 10px;
+
+    & > span{
+        margin:0 8px
+    }
+}
+
+@media (max-width: 767px) {
+
+    .component {
+      width: 100%;
+      margin: 0 0 $base-size 0;
+    }
+
+    .columnFormButton {
+    padding-top: 12px;
+  }
+
+  }
