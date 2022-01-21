@@ -1,0 +1,14 @@
+@use "sass:math";
+@import '../styles/settings.scss';
+
+.center{
+    left: 50%;
+    display: inline-block;
+    position: relative;
+    transform: translateX(-50%);  
+    
+    & > span{
+        font-size: 50px;
+        text-align: center;
+    }
+}
