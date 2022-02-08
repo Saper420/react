@@ -11,3 +11,25 @@
     justify-content: space-between;
     font-weight: bold;
 }
+.button {
+    color: #a9aeb8;
+    background: transparent;
+    border: 0;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    margin-left: 10px;
+  
+  
+    &:hover {
+        color: goldenrod;
+    }
+  
+    &.trash:hover {
+      color: $color-warning;
+    }
+  
+    &.isFavorite {
+      color: goldenrod;
+    }
+  }
