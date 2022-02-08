@@ -1,0 +1,46 @@
+@use "sass:math";
+@import '../styles/settings.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    background-color: darken($color-dark, 3%);
+    justify-content: space-between;
+    height: 60px;
+    line-height: 60px;
+    font-weight: bold;
+
+    .left{
+        color: white;
+        display: flex;
+        font-size: 24px;
+        float: left;
+        list-style-type:none;
+
+        i{
+            line-height: 60px;
+        }
+    }
+    .right{
+        display: flex;
+        float: right;
+        list-style-type:none;
+            li{
+                display: inline;
+                margin: 0 5px;
+            }
+
+        a{
+            text-decoration: none;
+            color: white;
+            transition: all 1s;
+        }
+        .linkActive{
+            color: red;
+            transition: all 1s;
+        }
+    }
+}

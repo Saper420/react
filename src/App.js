@@ -1,19 +1,26 @@
-import Hero from './Hero/Hero'
-import SearchForm from './SearchForm/SearchForm'
-import List from './List/List'
 import Container from './Container/Container';
-import Timer from './Timer/Timer';
+import Home from './Home/Home';
+import NavBar from './NavBar/NavBar';
+import { Routes, Route } from 'react-router-dom';
+import About from './About/About';
+import Favorite from './Favorite/Favorite';
+import ERR404 from './ERR404/ERR404';
+import List from './List/List';
 
 const App = () => {
   return (
-    <div>
+    <main>
+      <NavBar />
       <Container>
-        <Hero />
-        <SearchForm />
-        <Timer/>
-        <List />
+      <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/favorite" element={<Favorite />} />
+          <Route path="*" element={<ERR404 />} />
+          <Route path="/list/:listId" element={<List />} />
+        </Routes>
       </Container>
-    </div>
+    </main>
   );
 };
 
